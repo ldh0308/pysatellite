@@ -7,8 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "pysatellite"
+    "lee"
   ],
   "author": "leedonghyuk",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+	  "leedonghyuk": "./index.js"
+  }
 }
