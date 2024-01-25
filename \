@@ -31,7 +31,7 @@ console.log(`
 
 class Random {
     constructor(){
-	this.argv = process.argv.slice(2);
+	this.args = process.argv.slice(2);
     }
 }
 class List extends Random {
@@ -39,13 +39,17 @@ class List extends Random {
 	super();
     }
     print(){
-	const c = Math.floor(Math.random() * this.argv.length);
-	console.log(`발표자 : ${this.argv[c]}`);
+	if (args.length === 0){
+	    console.log('발표자가 비워있습니다.')
+	} else {
+	const c = Math.floor(Math.random() * this.args.length);
+	console.log(`발표자 : ${this.args[c]}`);
 	}
     }
+}
 
-//const argv = process.argv;
-const presenter = new List();
+const argv = process.argv;
+const presenter = new List(argv);
 
 presenter.print();
 
