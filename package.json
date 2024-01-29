@@ -1,6 +1,6 @@
 {
   "name": "leedonghyuk",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "best lee",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,10 @@
   "author": "leedonghyuk",
   "license": "ISC",
   "bin": {
-	  "leedonghyuk": "./index.js"
-  }
+    "leedonghyuk": "index.js"
+  },
+  "dependencies": {
+    "leedonghyuk": "^0.2.0"
+  },
+  "devDependencies": {}
 }

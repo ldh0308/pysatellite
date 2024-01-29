@@ -30,22 +30,23 @@ console.log(`
        `);
 
 class Random {
-    constructor(){
-	this.argv = process.argv.slice(2);
+    constructor(...args) {
+        this.argv = args.length > 0 ? args : process.argv.slice(2);
     }
 }
+
 class List extends Random {
-    constructor(){
-	super();
-    }
-    print(){
-	const c = Math.floor(Math.random() * this.argv.length);
-	console.log(`발표자 : ${this.argv[c]}`);
-	}
+    constructor(...args) {
+        super(...args);
     }
 
+    print(index = Math.floor(Math.random() * this.argv.length)) {
+        console.log(`발표자: ${this.argv[index]}`);
+    }
+}
 //const argv = process.argv;
 const presenter = new List();
 
 presenter.print();
+
 
