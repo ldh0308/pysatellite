@@ -31,7 +31,7 @@
 $ npm install -g leedonghyuk
 $ leedonghyuk
 
-$ awya5 발표자1 발표자2 발표자3
+$ leedonghyuk 발표자1 발표자2 발표자3
 
 발표자 : 발표자(1~3) 랜덤 출력
 
