@@ -12,6 +12,10 @@
   "author": "leedonghyuk",
   "license": "ISC",
   "bin": {
-	  "leedonghyuk": "./index.js"
-  }
+    "leedonghyuk": "index.js"
+  },
+  "dependencies": {
+    "leedonghyuk": "^0.2.0"
+  },
+  "devDependencies": {}
 }
